@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuraCafé - Carrinho</title>
+  <link rel="stylesheet" href="css/style.css"> <!-- estilos globais -->
+  <link rel="stylesheet" href="css/carrinho.css"> <!-- estilos do carrinho -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <h1><span class="logo-a">Aura</span><span class="logo-b">Café</span></h1>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="cardapio.html">Cardápio</a>
+      <a href="carrinho.html">Carrinho</a>
+      <a href="login.html">Login</a>
+    </div>
+    <div class="nav-icons">
+      <a href="carrinho.html"><i class="fa fa-shopping-cart"></i></a>
+      <a href="login.html"><i class="fa fa-user"></i></a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero small-hero">
+    <div class="overlay">
+      <h1>Seu Carrinho</h1>
+      <p>Confira seus pedidos antes de finalizar</p>
+    </div>
+  </header>
+
+  <!-- Carrinho -->
+  <section class="container">
+    <h2 style="text-align:center;">Itens no Carrinho</h2>
+
+    <div class="cart-list">
+
+      <!-- Item -->
+      <div class="cart-item">
+        <span class="item-name">☕ Café Espresso</span>
+        <span class="item-price">R$ 2,50</span>
+        <a href="#" class="btn">Remover</a>
+      </div>
+
+      <div class="cart-item">
+        <span class="item-name">🥛 Cappuccino</span>
+        <span class="item-price">R$ 3,50</span>
+        <a href="#" class="btn">Remover</a>
+      </div>
+
+      <div class="cart-item">
+        <span class="item-name">🥤 Café Latte</span>
+        <span class="item-price">R$ 4,00</span>
+        <a href="#" class="btn">Remover</a>
+      </div>
+
+    </div>
+
+    <div class="cart-total">
+      <h3>Total: <span class="price">R$ 10,00</span></h3>
+        <button type="button" onclick="location.href='pagamento.html'" class="btn pagamento-btn">
+          <i class="fa fa-credit-card"></i> Ir para o Pagamento
+        </button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Aura Café - Todos os direitos reservados</p>
+      <div class="socials">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

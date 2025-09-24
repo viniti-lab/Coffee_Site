@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuraCafé - Pagamento</title>
+  <link rel="stylesheet" href="css/style.css"> <!-- estilos globais -->
+  <link rel="stylesheet" href="css/pagamento.css"> <!-- estilos do pagamento -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <h1><span class="logo-a">Aura</span><span class="logo-b">Café</span></h1>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="cardapio.html">Cardápio</a>
+      <a href="carrinho.html">Carrinho</a>
+      <a href="pagamento.html" class="active">Pagamento</a>
+    </div>
+    <div class="nav-icons">
+      <a href="carrinho.html"><i class="fa fa-shopping-cart"></i></a>
+      <a href="login.html"><i class="fa fa-user"></i></a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero small-hero">
+    <div class="overlay">
+      <h1>Pagamento</h1>
+      <p>Finalize seu pedido com segurança</p>
+    </div>
+  </header>
+
+  <!-- Checkout -->
+  <section class="container pagamento-container">
+    <div class="pagamento-box">
+
+      <!-- Resumo do pedido -->
+      <div class="resumo-box">
+        <h2><i class="fa fa-receipt"></i> Resumo do Pedido</h2>
+        <ul class="pedido-lista">
+          <li>☕ Café Espresso <span>R$ 2,50</span></li>
+          <li>🥛 Cappuccino <span>R$ 3,50</span></li>
+          <li>🥤 Café Latte <span>R$ 4,00</span></li>
+        </ul>
+        <div class="pedido-total">
+          <strong>Total:</strong> <span>R$ 10,00</span>
+        </div>
+      </div>
+
+      <!-- Pagamento -->
+      <div class="form-box">
+        <h2><i class="fa fa-credit-card"></i> Forma de Pagamento</h2>
+        <form>
+          <div class="form-group metodo-pagamento">
+            <label><input type="radio" name="pagamento" checked> Cartão de Crédito</label>
+            <label><input type="radio" name="pagamento"> PIX</label>
+            <label><input type="radio" name="pagamento"> Boleto</label>
+          </div>
+
+          <!-- Cartão -->
+          <div class="cartao-info">
+            <div class="form-group">
+              <label for="nome">Nome no Cartão</label>
+              <input type="text" id="nome" placeholder="Ex: Maria Silva">
+            </div>
+            <div class="form-group">
+              <label for="numero">Número do Cartão</label>
+              <input type="text" id="numero" placeholder="0000 0000 0000 0000">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="validade">Validade</label>
+                <input type="text" id="validade" placeholder="MM/AA">
+              </div>
+              <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="123">
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn pagar-btn">
+            <i class="fa fa-lock"></i> Finalizar Pagamento
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Aura Café - Todos os direitos reservados</p>
+      <div class="socials">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
